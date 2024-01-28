@@ -1,7 +1,8 @@
 import Link from "next/link";
 const Footer = () => {
     return (
-        <>
+        <> 
+        {/* master */}
             {/* Footer */}
             <footer className="text-center text-lg-start bg-body-tertiary text-muted">
                 {/* Section: Social media */}
