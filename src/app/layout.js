@@ -2,6 +2,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import BootstrapClient from "@/components/bootstrapclient.js";
+
 import Navbar from "@/components/navbar";
 import Footer from "@/components/footer";
 
@@ -24,7 +25,7 @@ export default function RootLayout({ children }) {
 
 
 
-        <Footer></Footer>
+        <Footer/>
         <BootstrapClient/>
       </body>
     </html>
