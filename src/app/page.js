@@ -6,6 +6,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 // get our fontawesome imports
 import { faLocationCrosshairs } from "@fortawesome/free-solid-svg-icons";
 import BootstrapClient from "@/components/bootstrapclient.js";
+import MainImage from "../../public/image/fixarman.jpg";
 
 export default function Home() {
   return (
@@ -41,7 +42,9 @@ export default function Home() {
             <input type="submit" value={'Let\'s Find Fixar'} className="btn btn-primary btn-lg my-3"/>
           </div>
           <div className="col-md-6 col-12 text-center">
-          <Image src={'/image/fixarman.jpg'} alt="" width={400} height={700} className="img-fluid"/>
+          <div className="imageContainer">
+          <Image src={MainImage} alt="" width={400} height={700} className="img-fluid"/>
+          </div>
           </div>
         </div>
       </div>
