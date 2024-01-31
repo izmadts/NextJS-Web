@@ -2,7 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowAltCircleRight } from "@fortawesome/free-solid-svg-icons";
-const BlogPage = () => {
+export default function BlogPage(){
   return (
     <div>
       <section className="section gray-bg mt-5" id="blog">
@@ -80,4 +80,8 @@ const BlogPage = () => {
     </div>
   );
 };
-export default BlogPage;
+export function generateMetadata() {
+  return {
+    title: "Blog Page WeFixar"
+  }
+}

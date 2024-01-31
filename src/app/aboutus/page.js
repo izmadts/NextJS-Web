@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-const AboutPage = () => {
+export default function AboutPage() {
   return (
     <div className="container mt-5">
       <section>
@@ -105,4 +105,10 @@ const AboutPage = () => {
     </div>
   );
 };
-export default AboutPage;
+
+
+export function generateMetadata(param) {
+  return {
+    title: "About us Page WeFixar"
+  }
+}
